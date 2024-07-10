@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+        .background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .polaroid-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .polaroid {
+            width: 300px;
+        }
+        .polaroid img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .message {
+            font-size: 2em;
+            color: #333;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="WhatsApp Video 2024-07-10 at 12.35.35_82161910.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <audio autoplay loop>
+        <source src="No Soul - Jassa Dhillon (DJJOhAL.Com).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <div class="polaroid-box">
+            <div class="polaroid">
+                <img src="WhatsApp Image 2024-07-10 at 12.16.24_1571f663.jpg" alt="Polaroid Picture">
+            </div>
+        </div>
+        <div class="message">20 June, 2024 12:59 am
+            <br>
+            Good Morning Beautiful have a great day ♡
+    </div>
+</body>
+</html>
